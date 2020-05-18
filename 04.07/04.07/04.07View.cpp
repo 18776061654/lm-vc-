@@ -110,13 +110,13 @@ void CMy0407View::OnPopout()
 	// TODO: Add your command handler code here
 	mydialog dlg;
 	int t = dlg.DoModal();
-
 	if (t == IDOK)
 	{
+		
 		CString s;
 		s = _T("您已退出对话框");
-		CClientDC dc(this);              //创建一个对象
-		dc.TextOutW(100, 200, s);           //输出s
+		CClientDC dc(this);
+		dc.TextOutW(100, 200, s);
 
 
 	}
